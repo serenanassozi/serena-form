@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+--Blue: hsl(248, 32%, 49%);
+--DarkBlue: hsl(249, 10%, 26%); 
+--Grayish-Blue: hsl(246, 25%, 77%);
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100vw ;
+    height:100vh ;
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: var(--Red); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0  105px;
+    
+}
+p{
+    font-size: 16px;
+}
+.words{
+    color: #fff;
+    width: 50%;
+}
+h1{
+    font-size: 30px;
+}
+.medium{
+    background: var(--Blue);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+   
+}
+.weak{
+    font-weight: bold;
+}
+.white{
+
+  color: var(--Grayish-Blue);
+}
+.blood{
+    color: var(--Red);
+}
+.hope{
+    color: #fff;
+}
+form{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px 20px ;
+    margin: 10px 0;
+    border-radius: 5px;
+     border: none;
+     outline:1px solid var(--Grayish-Blue); 
+     width: 100%;
+    
+    
+}
+input:focus{
+    outline:1px solid var(--Blue);
+}
+.top{
+    background: var(--Green);
+    color: #fff;
+
+}
+.field span{
+    color:var(--Red) ;
+    font-size: 12px;
+    display: none;
+}
+.field{
+    position: relative;
+}
+svg{
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    display: none;
+}
+@media screen and (max-width :375px){
+    body{
+          background: url("/images/bg-intro-mobile.png");
+          background-color: var(--Red);
+          display: block;
+          padding: 5px;
+          height:fit-content;
+          padding-bottom: 100px;
+    }
+    .words{
+        width:100%;
+        padding: 100px 0;
+
+        
+    }
+    h1{
+        font-size:30px;
+        padding-bottom: 19px;
+    }
+   
+
+    
+    
+    
+}
